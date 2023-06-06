@@ -1,0 +1,181 @@
+body {
+    font-size: 16px;
+    color:black;
+    background-color: white;
+    font-family: 'Lora', sans-serif;
+  }
+
+#header-nav {
+  background-color: lightgrey;
+  border-radius: 0;
+  border: 3px solid black;
+  padding-left: 10px;
+}
+
+#header-nav .container {
+    padding: 0;
+}
+
+.navbar-brand {
+    padding-top: 13px;
+}
+
+.navbar-brand h1 {
+  position:relative;
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid black;
+  }
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px; 
+}
+
+#nav-list a {
+    color:black;
+    text-align: center;
+    background-color:lightgray;
+    border: 1px solid black;
+    font-size: 1.2em;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.navbar-toggle:hover {
+    background-color: aquamarine !important;
+}
+
+#nav-list a:hover {
+    background-color: aquamarine;
+}
+
+
+/* Main Content */
+
+.container {
+    width:100%;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#main-content h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+}
+
+#chicken-menu h2, #beef-menu h2, #sushi-menu h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#chicken-menu, #beef-menu, #sushi-menu {
+    background-color: lightgrey;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+#chicken-menu p, #beef-menu p, #sushi-menu p {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    float: right;
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #chicken-menu, #beef-menu {
+        width: 50%;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #chicken-menu {
+        border-right: 10px solid white;
+    }
+
+
+    #beef-menu {
+        border-left: 10px solid white;
+    }
+
+    .col-md-6 {
+        width:100%
+    }
+
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Home Page */
+    #chicken-menu {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    /* End Home Page */
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .container {
+        width: 80%;
+        padding: 0;
+    }
+    #main-content .row {
+        margin-bottom: 50px;
+        float: left;
+    }
+
+    #chicken-menu h2, #beef-menu h2, #sushi-menu h2 {
+        font-size: 1.8em;
+    }
+
+    #chicken-menu p, #beef-menu p, #sushi-menu p{
+        font-size: 1.2em;
+    }
+
+    .navbar-brand h1 {
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    #header-nav .container {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 10px;
+        padding-right: 0px;
+        margin-right: 0;
+    }
+
+    .navbar {
+        margin-bottom: 0;
+    }
+
+    #nav-list {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    }
